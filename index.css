@@ -1,0 +1,655 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: #f5f6fa;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+section {
+  padding: 20px 100px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section #comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section #comment .amy {
+  padding: 10px;
+}
+
+section #comment .amy .allcontent {
+  background-color: white;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+section #comment .amy .allcontent .score {
+  background-color: #eaecf1;
+  height: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+section #comment .amy .allcontent .textcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+section #comment .amy .allcontent .replydate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+section #comment .amy .allcontent .replydate .reply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #324152;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+section #comment .amy .allcontent .replydate .reply img {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+section #comment .amy .allcontent .replydate .namedate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #comment .amy .allcontent .replydate .namedate p {
+  margin-left: 5px;
+}
+
+section #comment .amy .allcontent .replydate .namedate button {
+  background-color: #5457b6;
+  color: white;
+  border: none;
+  padding: 3px;
+  margin-left: 5px;
+}
+
+section #comment .amy .allcontent .replydate .namedate img {
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+}
+
+section #comment .amy .allcontent2 {
+  background-color: white;
+  width: 90%;
+  float: right;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section #comment .amy .allcontent2 .score {
+  background-color: #eaecf1;
+  height: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+section #comment .amy .allcontent2 .textcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+section #comment .amy .allcontent2 .textcontent .text {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px;
+  outline: black 1px solid;
+}
+
+section #comment .amy .allcontent2 .textcontent .finaltext {
+  padding: 20px;
+  width: 100%;
+}
+
+section #comment .amy .allcontent2 .replydate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+section #comment .amy .allcontent2 .replydate .reply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #324152;
+  margin-left: 10px;
+}
+
+section #comment .amy .allcontent2 .replydate .reply .editreply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+section #comment .amy .allcontent2 .replydate .reply .delreply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+section #comment .amy .allcontent2 .replydate .reply img {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+section #comment .amy .allcontent2 .replydate .namedate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #comment .amy .allcontent2 .replydate .namedate p {
+  margin-left: 5px;
+}
+
+section #comment .amy .allcontent2 .replydate .namedate button {
+  background-color: #5457b6;
+  color: white;
+  border: none;
+  padding: 3px;
+  margin-left: 5px;
+}
+
+section #comment .amy .allcontent2 .replydate .namedate img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+section #comment .amy .deletebox {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 40%;
+  left: 50%;
+  -webkit-box-shadow: 100px 100px 800px 1000px rgba(0, 0, 0, 0.2), 100px 106px 120px 1000px rgba(0, 0, 0, 0.19);
+          box-shadow: 100px 100px 800px 1000px rgba(0, 0, 0, 0.2), 100px 106px 120px 1000px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+section #comment .amy .deletebox p {
+  margin-bottom: 20px;
+}
+
+section #comment .amy .deletebox .del {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+section #comment .amy .deletebox .confirmdiv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section #comment .amy .deletebox .confirmdiv button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+  color: white;
+}
+
+section #comment .amy .deletebox .confirmdiv .no {
+  background-color: #67727e;
+}
+
+section #comment .amy .deletebox .confirmdiv .yes {
+  background-color: #ed6468;
+}
+
+section #comment .myComment {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+section #comment .myComment .allcontent {
+  background-color: white;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+section #comment .myComment .allcontent .score {
+  background-color: #eaecf1;
+  height: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+section #comment .myComment .allcontent .textcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+section #comment .myComment .allcontent .text {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  resize: none;
+}
+
+section #comment .myComment .allcontent .replydate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+section #comment .myComment .allcontent .replydate .reply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #324152;
+  margin-left: 10px;
+}
+
+section #comment .myComment .allcontent .replydate .reply .editreply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+  color: #324152;
+}
+
+section #comment .myComment .allcontent .replydate .reply .delreply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+  color: #ed6468;
+}
+
+section #comment .myComment .allcontent .replydate .reply img {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+section #comment .myComment .allcontent .replydate .namedate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #comment .myComment .allcontent .replydate .namedate p {
+  margin-left: 5px;
+}
+
+section #comment .myComment .allcontent .replydate .namedate button {
+  background-color: #5457b6;
+  color: white;
+  border: none;
+  padding: 3px;
+  margin-left: 5px;
+}
+
+section #comment .myComment .allcontent .replydate .namedate img {
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+}
+
+section #comment .newComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 20px;
+  background-color: white;
+  height: 170px;
+  margin-bottom: 30px;
+}
+
+section #comment .newComment .userimg {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+section #comment .newComment .text {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  resize: none;
+  outline: black solid 1px;
+}
+
+section #comment .newComment .send {
+  width: 130px;
+  height: 40px;
+  color: #eaecf1;
+  background-color: #5457b6;
+  border: none;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+section #comment .newComment2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  float: right;
+  width: 90%;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+section #comment .newComment2 .userimg {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+section #comment .newComment2 .text {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px;
+  outline: black solid 1px;
+}
+
+section #comment .newComment2 .send {
+  width: 130px;
+  height: 40px;
+  color: #eaecf1;
+  background-color: #5457b6;
+  border: none;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+section #comment .update {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+section #comment .update .send {
+  width: 100px;
+  height: 50px;
+  color: #eaecf1;
+  background-color: #5457b6;
+  border: none;
+  border-radius: 8px;
+  margin-left: 20px;
+  outline: none;
+}
+
+@media only screen and (max-width: 713px) {
+  section {
+    padding: 10px 70px;
+  }
+  section .amy {
+    width: 100%;
+  }
+  section .amy .allcontent {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 20px;
+  }
+  section .amy .allcontent .score {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+  section .amy .allcontent .textcontent .replydate .reply {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+  }
+  section .amy .newComment {
+    position: relative;
+  }
+  section .amy .newComment img {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+  }
+  section .amy .newComment .text {
+    height: 60% !important;
+  }
+  section .amy .newComment .send {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+  }
+  section .amy .newComment2 {
+    position: relative;
+    height: 200px;
+  }
+  section .amy .newComment2 img {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+  }
+  section .amy .newComment2 .text {
+    height: 50% !important;
+  }
+  section .amy .newComment2 .send {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+  }
+  section .amy .allcontent2 {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 20px;
+  }
+  section .amy .allcontent2 .score {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+  section .amy .allcontent2 .textcontent .replydate .reply {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+  }
+  section .amy .deletebox {
+    width: 50% !important;
+  }
+  section .newComment {
+    position: relative;
+  }
+  section .newComment img {
+    position: absolute;
+    bottom: 3%;
+    left: 4%;
+  }
+  section .newComment .text {
+    height: 70% !important;
+  }
+  section .newComment .send {
+    position: absolute;
+    bottom: 3%;
+    right: 4%;
+  }
+  section .myComment .allcontent {
+    position: relative;
+  }
+  section .myComment .allcontent .textcontent .replydate .reply {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  section {
+    padding: 10px 20px;
+  }
+  section .amy .deletebox {
+    width: 90% !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
