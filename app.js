@@ -1,9 +1,14 @@
 let amy = document.querySelector(".amy");
 let myComment = document.querySelector(".myComment");
-fetch('data.json')
+let JsonData = 'data.json';
+// localStorage.setItem("jsondata", JsonData)
+// localStorage.getItem("jsondata");
+fetch(JsonData)
 .then((resp) => resp.json())
 .then((json) => {
     let userComments = json.comments;
+
+window.addEventListener('DOMContentLoaded', setupItems);
         
 
 //looping through the first two element of the json array
@@ -128,10 +133,10 @@ fetch('data.json')
                 editimg.src = "images/icon-edit.svg";
                 let deledit = document.createElement("div")
                 let overalcontent = document.createElement("div");
-                let text = document.createElement("p")
-                text.textContent = commentbox.value;
-
-              
+                    let text = document.createElement("p");
+                    text.value = commentbox.value; 
+                    text.textContent = text.value;
+                addToLocalStorage(text);
 
                 
 
@@ -468,7 +473,7 @@ fetch('data.json')
                 // let userName = document.createElement("p");
                 // userName.textContent = userComments[1].replies[1].user.username
                 // Add to LS
-                 addToLocalStorage(text);
+                //  addToLocalStorage(text);
                 let you = document.createElement("button")
                 you.textContent = "you";
                 let month = document.createElement("p");
@@ -595,15 +600,29 @@ fetch('data.json')
                 })
             }
         })
- })
+        
+    })
+    function addToLocalStorage(text) {
+        const texts = {text};
+        let items = getLocalStorage();
+        items.push(text);
+        localStorage.setItem('text', JSON.stringify(items));
+       }
+   
+  
+  function getLocalStorage() {
+      return localStorage.getItem('text')? JSON.parse(localStorage.getItem('text')): [];
+  }
+
+  function setupItems() {
+      let items = getLocalStorage();
+      if(items.length > 0) {
+        let text = document.createElement("p");
+        text.value = commentbox.value; 
+          text.textContent = text.value
+      }
+  }
+   
 
 
-//  function addToLocalStorage(text) {
-//       const texts = {text};
-//       let items = getLocalStorage();
-//       items.push(text);
-//       localStorage.setItem([])
-//      }
- 
-            
  
