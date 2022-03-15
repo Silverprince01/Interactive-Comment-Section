@@ -52,15 +52,21 @@ section #comment .amy .allcontent {
 }
 
 section #comment .amy .allcontent .score {
-  background-color: #eaecf1;
+  background-color: #f5f6fa;
   height: 100%;
   padding: 8px;
   border-radius: 5px;
   margin-right: 20px;
 }
 
+section #comment .amy .allcontent .score .numbop {
+  color: #eaecf1;
+}
+
 section #comment .amy .allcontent .score p {
   cursor: pointer;
+  font-weight: 700;
+  color: #5457b6;
 }
 
 section #comment .amy .allcontent .textcontent {
@@ -161,6 +167,16 @@ section #comment .amy .allcontent2 .score {
   padding: 8px;
   border-radius: 5px;
   margin-right: 20px;
+}
+
+section #comment .amy .allcontent2 .score .numbop {
+  color: #eaecf1;
+}
+
+section #comment .amy .allcontent2 .score p {
+  cursor: pointer;
+  font-weight: 700;
+  color: #5457b6;
 }
 
 section #comment .amy .allcontent2 .textcontent {
@@ -344,8 +360,14 @@ section #comment .myComment .allcontent .score {
   margin-right: 20px;
 }
 
+section #comment .myComment .allcontent .score .numbop {
+  color: #eaecf1;
+}
+
 section #comment .myComment .allcontent .score p {
   cursor: pointer;
+  font-weight: 700;
+  color: #5457b6;
 }
 
 section #comment .myComment .allcontent .textcontent {
@@ -389,6 +411,7 @@ section #comment .myComment .allcontent .replydate .reply {
           align-items: center;
   color: #324152;
   margin-left: 10px;
+  font-weight: 700;
 }
 
 section #comment .myComment .allcontent .replydate .reply .editreply {
@@ -655,10 +678,32 @@ section #comment .update .send {
   }
   section .myComment .allcontent {
     position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 20px;
+  }
+  section .myComment .allcontent .score {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+  section .myComment .allcontent .textcontent .replydate .namedate img {
+    margin-right: 15px !important;
+  }
+  section .myComment .allcontent .textcontent .replydate .namedate p {
+    margin-left: 15px !important;
   }
   section .myComment .allcontent .textcontent .replydate .reply {
-    position: relative;
-    bottom: 10%;
+    position: absolute;
+    bottom: 15%;
     right: 10%;
   }
 }

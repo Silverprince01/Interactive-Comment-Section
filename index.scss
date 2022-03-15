@@ -28,13 +28,18 @@ section {
         padding: 20px;
         border-radius: 5px;
         .score {
-          background-color: hsl(223, 19%, 93%);
+          background-color: hsl(228, 33%, 97%);
           height: 100%;
           padding: 8px;
           border-radius: 5px;
           margin-right: 20px;
-          p{
+          .numbop {
+            color: hsl(223, 19%, 93%);
+          }
+          p {
             cursor: pointer;
+            font-weight: 700;
+            color: hsl(238, 40%, 52%);
           }
         }
         .textcontent {
@@ -74,7 +79,6 @@ section {
               border: none;
               padding: 3px;
               margin-left: 5px;
-              
             }
             img {
               width: 35px;
@@ -99,8 +103,15 @@ section {
           height: 100%;
           padding: 8px;
           border-radius: 5px;
-          // width: 20%;
           margin-right: 20px;
+          .numbop {
+            color: hsl(223, 19%, 93%);
+          }
+          p {
+            cursor: pointer;
+            font-weight: 700;
+            color: hsl(238, 40%, 52%);
+          }
         }
         .textcontent {
           display: flex;
@@ -138,7 +149,7 @@ section {
               display: flex;
               margin-left: 10px;
               cursor: pointer;
-              color:hsl(357, 49%, 40%);
+              color: hsl(357, 49%, 40%);
             }
             img {
               margin-right: 5px;
@@ -226,8 +237,13 @@ section {
           padding: 8px;
           border-radius: 5px;
           margin-right: 20px;
-          p{
+          .numbop {
+            color: hsl(223, 19%, 93%);
+          }
+          p {
             cursor: pointer;
+            font-weight: 700;
+            color: hsl(238, 40%, 52%);
           }
         }
         .textcontent {
@@ -235,11 +251,11 @@ section {
           flex-direction: column;
           width: 100%;
         }
-        .text{
+        .text {
           width: 100%;
           height: 100px;
           padding: 10px;
-          resize: none;   
+          resize: none;
         }
         .replydate {
           display: flex;
@@ -252,6 +268,7 @@ section {
             align-items: center;
             color: hsl(212, 24%, 26%);
             margin-left: 10px;
+            font-weight: 700;
             .editreply {
               display: flex;
               margin-left: 10px;
@@ -288,7 +305,6 @@ section {
               border-radius: 30px;
             }
           }
-          
         }
       }
     }
@@ -306,6 +322,7 @@ section {
         height: 35px;
         margin-right: 20px;
       }
+
       .text {
         width: 100%;
         height: 100%;
@@ -320,7 +337,7 @@ section {
         border: none;
         border-radius: 8px;
         margin-left: 20px;
-        &:hover{
+        &:hover {
           opacity: 0.5;
         }
       }
@@ -352,7 +369,7 @@ section {
         border: none;
         border-radius: 8px;
         margin-left: 20px;
-        &:hover{
+        &:hover {
           opacity: 0.5;
         }
       }
@@ -475,11 +492,27 @@ section {
     .myComment {
       .allcontent {
         position: relative;
+        flex-direction: column-reverse;
+        gap: 20px;
+        .score {
+          display: flex;
+          width: 20%;
+          justify-content: space-between;
+          align-self: baseline;
+        }
         .textcontent {
           .replydate {
+            .namedate {
+              img {
+                margin-right: 15px !important;
+              }
+              p {
+                margin-left: 15px !important;
+              }
+            }
             .reply {
-              position: relative;
-              bottom: 10%;
+              position: absolute;
+              bottom: 15%;
               right: 10%;
             }
           }
@@ -495,7 +528,7 @@ section {
       .deletebox {
         width: 90% !important;
       }
-      .score{
+      .score {
         width: 25% !important;
       }
     }

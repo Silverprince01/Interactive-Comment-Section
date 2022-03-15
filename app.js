@@ -20,6 +20,7 @@ let commentArray = [];
     userimg.src = userComments[i].user.image.png;
     let userName = document.createElement("p");
     userName.textContent = userComments[i].user.username
+    userName.style.fontWeight = "700"
     let month = document.createElement("p");
     month.textContent = userComments[i].createdAt
     let reply = document.createElement("p");
@@ -39,6 +40,8 @@ let commentArray = [];
     
 // Adding classs to the created element
     scores.classList.add("score") 
+    plus.classList.add("numbop")
+    minus.classList.add("numbop")
     replyar.classList.add("reply")
     nameandate.classList.add("namedate");
     nameandaterep.classList.add("replydate");
@@ -73,9 +76,7 @@ let commentArray = [];
         let commentbox = document.createElement("textarea");
         let fname = document.createElement("p")
         fname.textContent = "@"+ userComments[i].user.username + ",";
-        // fname.style.display  = "none";
         commentbox.textContent += fname.textContent;
-        // commentbox.innerText = "@"+ userComments[i].user.username + ",";
         let sendbutton =  document.createElement("button");
         sendbutton.textContent = "Reply";
 
@@ -110,6 +111,7 @@ let commentArray = [];
                 userimg.src = "images/avatars/fuad.jpg"
                 let userName = document.createElement("p");
                 userName.textContent = userComments[1].replies[1].user.username
+                userName.style.fontWeight = "700"
                 let you = document.createElement("button")
                 you.textContent = "you";
                 let month = document.createElement("p");
@@ -134,6 +136,8 @@ let commentArray = [];
                 
 
                 scores.classList.add("score") 
+                plus.classList.add("numbop")
+                minus.classList.add("numbop")
                 nameandate.classList.add("namedate");
                 nameandaterep.classList.add("replydate");
                 deledit.classList.add("reply")
@@ -150,8 +154,6 @@ let commentArray = [];
                 nameandate.appendChild(month)
                 deleted.appendChild(deleteimg)
                 deleted.appendChild(deletetext)
-                // edited.appendChild(editimg)
-                // edited.appendChild(editext)
                 deledit.appendChild(deleted)
                 deledit.appendChild(edited)
                 nameandaterep.appendChild(nameandate)
@@ -220,6 +222,7 @@ let commentArray = [];
         userimg.src = newReply.user.image.png;
         let userName = document.createElement("p");
         userName.textContent = newReply.user.username
+        userName.style.fontWeight = "700"
         let month = document.createElement("p");
         month.textContent = newReply.createdAt
         let reply = document.createElement("p");
@@ -239,6 +242,8 @@ let commentArray = [];
 
         // Adding classes to it
         scores.classList.add("score") 
+        plus.classList.add("numbop")
+        minus.classList.add("numbop")
         replyar.classList.add("reply")
         nameandate.classList.add("namedate");
         nameandaterep.classList.add("replydate");
@@ -301,6 +306,7 @@ let commentArray = [];
                         userimg.src = "images/avatars/fuad.jpg"
                         let userName = document.createElement("p");
                         userName.textContent = userComments[1].replies[1].user.username
+                        userName.style.fontWeight = "700"
                         let you = document.createElement("button")
                         you.textContent = "you";
                         let month = document.createElement("p");
@@ -324,9 +330,10 @@ let commentArray = [];
                     let finaltextdiv = document.createElement("div")
                     let finaltext = document.createElement("p")
                     
-                    // overalcontent.textContent = commentbox.value;
                     
                     scores.classList.add("score") 
+                    plus.classList.add("numbop")
+                    minus.classList.add("numbop")
                     nameandate.classList.add("namedate");
                     nameandaterep.classList.add("replydate");
                     deledit.classList.add("reply")
@@ -453,8 +460,8 @@ let commentArray = [];
                     let currentScores = document.createElement("p");
                     currentScores.textContent = userComments[1].replies[1].score; 
                    let plus = document.createElement("p")
-                plus.textContent = "+"
-                let minus = document.createElement("p")
+                   plus.textContent = "+"
+                    let minus = document.createElement("p")
                 minus.textContent = "-" 
                 let userimg = document.createElement("img")
                 userimg.src = "images/avatars/fuad.jpg"
@@ -485,6 +492,8 @@ let commentArray = [];
 
 
                 scores.classList.add("score") 
+                plus.classList.add("numbop")
+                minus.classList.add("numbop")
                 nameandate.classList.add("namedate");
                 nameandaterep.classList.add("replydate");
                 deledit.classList.add("reply")
@@ -584,7 +593,6 @@ let commentArray = [];
                 })
             }
         })
-        // console.log(window.localStorage)
  })
 
  
