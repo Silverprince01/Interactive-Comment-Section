@@ -59,6 +59,10 @@ section #comment .amy .allcontent .score {
   margin-right: 20px;
 }
 
+section #comment .amy .allcontent .score p {
+  cursor: pointer;
+}
+
 section #comment .amy .allcontent .textcontent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,6 +98,7 @@ section #comment .amy .allcontent .replydate .reply {
   color: #324152;
   margin-left: 10px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 section #comment .amy .allcontent .replydate .reply img {
@@ -205,6 +210,8 @@ section #comment .amy .allcontent2 .replydate .reply {
           align-items: center;
   color: #324152;
   margin-left: 10px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 section #comment .amy .allcontent2 .replydate .reply .editreply {
@@ -212,6 +219,7 @@ section #comment .amy .allcontent2 .replydate .reply .editreply {
   display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 section #comment .amy .allcontent2 .replydate .reply .delreply {
@@ -219,6 +227,7 @@ section #comment .amy .allcontent2 .replydate .reply .delreply {
   display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 section #comment .amy .allcontent2 .replydate .reply img {
@@ -333,6 +342,10 @@ section #comment .myComment .allcontent .score {
   padding: 8px;
   border-radius: 5px;
   margin-right: 20px;
+}
+
+section #comment .myComment .allcontent .score p {
+  cursor: pointer;
 }
 
 section #comment .myComment .allcontent .textcontent {
@@ -468,6 +481,10 @@ section #comment .newComment .send {
   margin-left: 20px;
 }
 
+section #comment .newComment .send:hover {
+  opacity: 0.5;
+}
+
 section #comment .newComment2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,6 +521,10 @@ section #comment .newComment2 .send {
   border: none;
   border-radius: 8px;
   margin-left: 20px;
+}
+
+section #comment .newComment2 .send:hover {
+  opacity: 0.5;
 }
 
 section #comment .update {
