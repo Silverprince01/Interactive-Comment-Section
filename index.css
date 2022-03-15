@@ -180,7 +180,6 @@ section #comment .amy .allcontent2 .textcontent .text {
   width: 100%;
   min-height: 100px;
   padding: 20px;
-  outline: black 1px solid;
 }
 
 section #comment .amy .allcontent2 .textcontent .finaltext {
@@ -228,6 +227,7 @@ section #comment .amy .allcontent2 .replydate .reply .delreply {
   display: flex;
   margin-left: 10px;
   cursor: pointer;
+  color: #983439;
 }
 
 section #comment .amy .allcontent2 .replydate .reply img {
@@ -468,7 +468,6 @@ section #comment .newComment .text {
   height: 100%;
   padding: 10px;
   resize: none;
-  outline: black solid 1px;
 }
 
 section #comment .newComment .send {
@@ -510,7 +509,6 @@ section #comment .newComment2 .text {
   width: 100%;
   min-height: 100px;
   padding: 20px;
-  outline: black solid 1px;
 }
 
 section #comment .newComment2 .send {
@@ -576,7 +574,7 @@ section #comment .update .send {
   }
   section .amy .allcontent .textcontent .replydate .reply {
     position: absolute;
-    bottom: 15%;
+    bottom: 12%;
     right: 10%;
   }
   section .amy .newComment {
@@ -633,7 +631,7 @@ section #comment .update .send {
   }
   section .amy .allcontent2 .textcontent .replydate .reply {
     position: absolute;
-    bottom: 15%;
+    bottom: 12%;
     right: 10%;
   }
   section .amy .deletebox {
@@ -659,7 +657,7 @@ section #comment .update .send {
     position: relative;
   }
   section .myComment .allcontent .textcontent .replydate .reply {
-    position: absolute;
+    position: relative;
     bottom: 10%;
     right: 10%;
   }
@@ -671,6 +669,9 @@ section #comment .update .send {
   }
   section .amy .deletebox {
     width: 90% !important;
+  }
+  section .amy .score {
+    width: 25% !important;
   }
 }
 /*# sourceMappingURL=index.css.map */

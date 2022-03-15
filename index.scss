@@ -120,7 +120,7 @@ section {
             min-height: 100px;
             padding: 20px;
             // border: none;
-            outline: black 1px solid;
+            // outline: black 1px solid;
           }
           .finaltext {
             padding: 20px;
@@ -149,6 +149,7 @@ section {
               display: flex;
               margin-left: 10px;
               cursor: pointer;
+              color:hsl(357, 49%, 40%);
             }
             img {
               margin-right: 5px;
@@ -326,7 +327,7 @@ section {
         padding: 10px;
         resize: none;
         // border: none;
-        outline: black solid 1px;
+        // outline: black solid 1px;
       }
       .send {
         // padding: 20px;
@@ -363,7 +364,7 @@ section {
         width: 100%;
         min-height: 100px;
         padding: 20px;
-        outline: black solid 1px;
+        // outline: black solid 1px;
         // outline: none;
       }
       .send {
@@ -418,7 +419,7 @@ section {
           .replydate {
             .reply {
               position: absolute;
-              bottom: 15%;
+              bottom: 12%;
               right: 10%;
               // width: 100%;
             }
@@ -474,7 +475,7 @@ section {
           .replydate {
             .reply {
               position: absolute;
-              bottom: 15%;
+              bottom: 12%;
               right: 10%;
             }
           }
@@ -506,7 +507,7 @@ section {
         .textcontent {
           .replydate {
             .reply {
-              position: absolute;
+              position: relative;
               bottom: 10%;
               right: 10%;
             }
@@ -522,6 +523,9 @@ section {
     .amy {
       .deletebox {
         width: 90% !important;
+      }
+      .score{
+        width: 25% !important;
       }
     }
   }
