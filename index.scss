@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  // flex-direction: column;
   position: relative;
   background-color: hsl(228, 33%, 97%);
   font-size: 16px;
@@ -27,15 +26,12 @@ section {
         display: flex;
         justify-content: space-between;
         padding: 20px;
-        // width: 100%;
         border-radius: 5px;
-        // align-items: flex-start;
         .score {
           background-color: hsl(223, 19%, 93%);
           height: 100%;
           padding: 8px;
           border-radius: 5px;
-          // width: 20%;
           margin-right: 20px;
           p{
             cursor: pointer;
@@ -45,7 +41,6 @@ section {
           display: flex;
           flex-direction: column;
           width: 100%;
-          // justify-content: ;
         }
         .replydate {
           display: flex;
@@ -60,8 +55,6 @@ section {
             margin-left: 10px;
             font-weight: 700;
             cursor: pointer;
-            // color: hsl(211, 10%, 45%);
-            // width: 10%;
             img {
               margin-right: 5px;
               width: 15px;
@@ -114,13 +107,10 @@ section {
           flex-direction: column;
           flex-wrap: wrap;
           width: 100%;
-          // justify-content: ;
           .text {
             width: 100%;
             min-height: 100px;
             padding: 20px;
-            // border: none;
-            // outline: black 1px solid;
           }
           .finaltext {
             padding: 20px;
@@ -139,7 +129,6 @@ section {
             margin-left: 10px;
             font-weight: 700;
             cursor: pointer;
-            // width: 10%;
             .editreply {
               display: flex;
               margin-left: 10px;
@@ -230,9 +219,7 @@ section {
         display: flex;
         justify-content: space-between;
         padding: 20px;
-        // width: 100%;
         border-radius: 5px;
-        // align-items: flex-start;
         .score {
           background-color: hsl(223, 19%, 93%);
           height: 100%;
@@ -247,7 +234,6 @@ section {
           display: flex;
           flex-direction: column;
           width: 100%;
-          // justify-content: ;
         }
         .text{
           width: 100%;
@@ -276,7 +262,6 @@ section {
               margin-left: 10px;
               color: hsl(358, 79%, 66%);
             }
-            // width: 10%;
             img {
               margin-right: 5px;
               width: 15px;
@@ -326,11 +311,8 @@ section {
         height: 100%;
         padding: 10px;
         resize: none;
-        // border: none;
-        // outline: black solid 1px;
       }
       .send {
-        // padding: 20px;
         width: 130px;
         height: 40px;
         color: hsl(223, 19%, 93%);
@@ -350,10 +332,7 @@ section {
       float: right;
       width: 90%;
       background-color: hsl(0, 0%, 100%);
-      // min-height: 170px;
       margin-bottom: 30px;
-      // display: block;
-      // align-items: center;
       .userimg {
         border-radius: 50%;
         width: 35px;
@@ -364,11 +343,8 @@ section {
         width: 100%;
         min-height: 100px;
         padding: 20px;
-        // outline: black solid 1px;
-        // outline: none;
       }
       .send {
-        // padding: 20px;
         width: 130px;
         height: 40px;
         color: hsl(223, 19%, 93%);
@@ -386,7 +362,6 @@ section {
       justify-content: space-between;
       margin-top: 10px;
       .send {
-        // padding: 20px;
         width: 100px;
         height: 50px;
         color: hsl(223, 19%, 93%);
@@ -412,7 +387,6 @@ section {
           display: flex;
           width: 20%;
           justify-content: space-between;
-          //  display: block;
           align-self: baseline;
         }
         .textcontent {
@@ -421,7 +395,6 @@ section {
               position: absolute;
               bottom: 12%;
               right: 10%;
-              // width: 100%;
             }
           }
         }
@@ -434,7 +407,6 @@ section {
           left: 5%;
         }
         .text {
-          // resize: none;
           height: 60% !important;
         }
         .send {
@@ -468,7 +440,6 @@ section {
           display: flex;
           width: 20%;
           justify-content: space-between;
-          //  display: block;
           align-self: baseline;
         }
         .textcontent {
