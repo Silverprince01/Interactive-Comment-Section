@@ -5,7 +5,7 @@ fetch('data.json')
 .then((json) => {
     let userComments = json.comments;
         
-let commentArray = [];
+
 //looping through the first two element of the json array
     for(let i = 0; i<userComments.length; i++){
         // Creating element for the Json data that works for the first two json data in the array
@@ -467,6 +467,8 @@ let commentArray = [];
                 userimg.src = "images/avatars/fuad.jpg"
                 // let userName = document.createElement("p");
                 // userName.textContent = userComments[1].replies[1].user.username
+                // Add to LS
+                 addToLocalStorage(text);
                 let you = document.createElement("button")
                 you.textContent = "you";
                 let month = document.createElement("p");
@@ -595,6 +597,13 @@ let commentArray = [];
         })
  })
 
+
+//  function addToLocalStorage(text) {
+//       const texts = {text};
+//       let items = getLocalStorage();
+//       items.push(text);
+//       localStorage.setItem([])
+//      }
  
             
  
